@@ -1,30 +1,28 @@
-package com.abnerbenitez;
-
 /**
  * @author Abner Benitez
  * Algorithm: inverting a binary tree
   */
 
-public class TreeNode {
+class TreeNode {
     int val;
     TreeNode left;
     TreeNode right;
 
-    TreeNode() {
+    public TreeNode() {
     }
 
-    TreeNode(int val) {
+    public TreeNode(int val) {
         this.val = val;
     }
 
-    TreeNode(int val, TreeNode left, TreeNode right) {
+    public TreeNode(int val, TreeNode left, TreeNode right) {
         this.val = val;
         this.left = left;
         this.right = right;
     }
 }
 
-class TreeNodeSolution {
+public class InvertBinaryTree {
 
     public static void main (String[] args) {
         TreeNode root;
@@ -37,7 +35,7 @@ class TreeNodeSolution {
         root.left.right = new TreeNode(3);
         root.right.left = new TreeNode(6);
         root.right.right = new TreeNode(9);
-        TreeNodeSolution.invertTree(root);
+        InvertBinaryTree.invertTree(root);
     }
 
     public static TreeNode invertTree(TreeNode root) {
