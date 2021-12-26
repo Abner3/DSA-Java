@@ -1,7 +1,5 @@
-package com.abnerbenitez;
-
 /**
- * @author Abner Benitez
+ * @author Abner3
  * Algorithm: inverting a binary tree
   */
 
